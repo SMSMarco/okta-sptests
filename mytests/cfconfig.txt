@@ -1,0 +1,2 @@
+box cfconfig export from=C:/Users/mortiz/.CommandBox/server/8B43045E1583F68178DE6192E292B760-service-providers/adobe-2023.0.11.330706/WEB-INF/cfusion/ to=.cfconfig.json fromFormat=adobe@11
+

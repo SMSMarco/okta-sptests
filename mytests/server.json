@@ -1,0 +1,41 @@
+{
+    "app":{
+        "cfengine":"${CFML_SERVER_ENGINE}"
+    },
+    "name":"service-providers",
+    "sites":{
+        "sptest1":{
+            "blockCFAdmin":"false",
+            "directoryBrowsing":true,
+            "hostAlias":"okta.sptest1.com",
+            "openBrowser":true,
+            "openBrowserURL":"http://okta.sptest1.com:8081/saml-reponse.cfm",
+            "rewrites":{
+                "enable":"true"
+            },
+            "scripts":{
+                "onServerInstall":"cfpm install saml"
+            },
+            "webroot":"sptest1"
+        },
+        "sptest2":{
+            "blockCFAdmin":"false",
+            "directoryBrowsing":true,
+            "hostAlias":"okta.sptest2.com",
+            "rewrites":{
+                "enable":"true"
+            },
+            "scripts":{
+                "onServerInstall":"cfpm install saml"
+            },
+            "webroot":"sptest2"
+        }
+    },
+    "web":{
+        "bindings":{
+            "HTTP":{
+                "listen":"0.0.0.0:8081"
+            }
+        }
+    }
+}
