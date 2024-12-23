@@ -2,7 +2,7 @@
     "app":{
         "cfengine":"${CFML_SERVER_ENGINE}"
     },
-    "name":"service-providers",
+    "name":"sptest1",
     "sites":{
         "sptest1":{
             "blockCFAdmin":"false",
